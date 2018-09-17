@@ -1,0 +1,10 @@
+20180917
+ VirtualBox (pendiente de anotar)
+
+ git:
+ crear usuario y repositorio en github (pendiente de anotar)
+
+ git clone https://github.com/luisvelasco1819/ed.git 
+ git config --global user.name luisvelasco1819
+ git config --global user.email luis.velasco@institutoserpis.org
+ git config --global push.default simple
