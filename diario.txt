@@ -8,3 +8,11 @@
  git config --global user.name luisvelasco1819
  git config --global user.email luis.velasco@institutoserpis.org
  git config --global push.default simple
+
+20180924
+ En la máquina virtual con ubuntu 16.04 instalamos el jdk de java8:
+  sudo apt-add-repository ppa:webupd8team/java
+  sudo apt-get update
+  sudo apt install oracle-java8-installer
+
+ Creamos HolaMundo.java, compilamos y ejecutamos.
