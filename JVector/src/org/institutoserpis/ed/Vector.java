@@ -25,4 +25,8 @@ public class Vector {
 				return index;
 		return -1;
 	}
+	
+	public static int min(int[] v) {
+		return -33; //TODO implementar
+	}
 }

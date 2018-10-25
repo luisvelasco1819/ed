@@ -21,5 +21,11 @@ class VectorTest {
 		assertEquals(-1, Vector.indexOf(v, 22));
 	}
 	
+	@Test
+	void min() {
+		assertEquals(12, Vector.min(new int[] {16, 12, 15, 14, 17}));
+		//assertEquals(9, min(new int[] {9, 12, 15, 14, 17}));
+	
+	}
 
 }
