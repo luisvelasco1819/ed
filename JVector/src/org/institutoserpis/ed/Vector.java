@@ -27,6 +27,24 @@ public class Vector {
 	}
 	
 	public static int min(int[] v) {
-		return -33; //TODO implementar
+//		int min = v[0];
+//		for (int index = 1; index < v.length; index++)
+//			if (v[index] < min)
+//				min = v[index];
+//		return min;
+		int indexOfMin = indexOfMin(v);
+		return v[indexOfMin]; 
+	}
+	
+	public static int indexOfMin(int[] v) {
+		int indexOfMin = 0;
+		for (int index = 1; index < v.length; index++)
+			if (v[index] < v[indexOfMin])
+				indexOfMin = index;
+		return indexOfMin;
+	}
+	
+	public static void sort(int[] v) {
+		//TODO implementar mediante selección directa
 	}
 }
