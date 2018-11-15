@@ -1,5 +1,7 @@
 package org.institutoserpis.ed;
 
+import static org.junit.jupiter.api.Assertions.assertLinesMatch;
+
 public class Vector {
 
 	public static void main(String[] args) {
@@ -44,7 +46,37 @@ public class Vector {
 		return indexOfMin;
 	}
 	
+	public static int indexOfMin(int[] v, int initialIndex) {
+		int indexOfMin = initialIndex;
+		for (int index = initialIndex + 1; index < v.length; index++)
+			if (v[index] < v[indexOfMin])
+				indexOfMin = index;
+		return indexOfMin;
+	}
+	
+	private static void swap(int[] v, int indexOne, int indexTwo) {
+		int aux = v[indexOne];
+		v[indexOne] = v[indexTwo];
+		v[indexTwo] = aux;
+	}
+
 	public static void sort(int[] v) {
 		//TODO implementar mediante selección directa
+		//indexOfSelected [0, n-2] index del elemento seleccionado
+		//indexOfMin ?
+		//index [indexOfSelected + 1, n-1] auxiliar para obtener indexOfMin
+//		int n = v.length;
+//		for (int indexOfSelected = 0; indexOfSelected < n - 1; indexOfSelected++) {
+//			int indexOfMin = indexOfSelected;
+//			for (int index = indexOfSelected + 1; index < n; index++)
+//				if (v[index] < v[indexOfMin])
+//					indexOfMin = index;
+//			int aux = v[indexOfSelected];
+//			v[indexOfSelected] = v[indexOfMin];
+//			v[indexOfMin] = aux;
+//		}
+		for (int index = 0; index < v.length - 1; index++)
+			swap(v, index, indexOfMin(v, index));
 	}
+	
 }
