@@ -34,3 +34,6 @@
  apt update
  apt install -y monodevelop
 
+20181119
+ modificado .gitignore para excluir directorios y ficheros de .net
+
