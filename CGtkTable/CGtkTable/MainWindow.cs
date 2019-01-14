@@ -3,6 +3,7 @@ using Gtk;
 
 public partial class MainWindow : Gtk.Window
 {
+	private string jugador = "X";
     public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
         Build();
@@ -12,7 +13,13 @@ public partial class MainWindow : Gtk.Window
 				Button button = new Button();
 				table.Attach(button, (uint)column, (uint)column + 1, (uint)row, (uint)row + 1);
 				button.Clicked += delegate {
-					button.Label = "X";
+					if (button.Label != null)
+						return;
+					button.Label = jugador;
+					if (jugador == "X")
+						jugador = "O";
+					else
+						jugador = "X";
 				};
 			}
 		vBox.Add(table);
