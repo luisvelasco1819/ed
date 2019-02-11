@@ -37,3 +37,7 @@
 20181119
  modificado .gitignore para excluir directorios y ficheros de .net
 
+20190117
+ instalación de Android Studio
+  En ubuntu 16.04 instalar previamente: lib32z1 lib32ncurses5 lib32stdc++6 qemu-kvm libvirt-bin
+  
