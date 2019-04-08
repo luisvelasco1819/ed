@@ -40,4 +40,9 @@
 20190117
  instalación de Android Studio
   En ubuntu 16.04 instalar previamente: lib32z1 lib32ncurses5 lib32stdc++6 qemu-kvm libvirt-bin
+
+20190401
+ instalación de JetBrains ToolBox
+   instalación de IntelliJ IDEA Community
+
   
