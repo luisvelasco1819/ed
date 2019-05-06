@@ -12,6 +12,7 @@ public partial class MainWindow : Gtk.Window
 		treeView.Model = listStore;
 		listStore.AppendValues("Rosa", "777666555");
 		listStore.AppendValues("Pepe", "777666554");
+		listStore.AppendValues("Ana", "777666553");
 
 
     }
