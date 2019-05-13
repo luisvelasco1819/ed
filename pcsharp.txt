@@ -1,0 +1,7 @@
+Anotaciones del proyecto pcsharp
+Voy a hacer agenda sencillita (nombre y teléfono por ahora).
+ · Mostrar la agenda en una lista
+ · Añadir nuevas entradas
+ · Modificar entradas
+ · Eliminar
+Se persiste la información en un archivo con formato json.
